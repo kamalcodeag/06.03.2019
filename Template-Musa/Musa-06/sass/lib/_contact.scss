@@ -1,0 +1,135 @@
+#contact
+{
+    border-bottom: 1px solid #ddd;
+    .container
+    {
+        h6
+        {
+            font-weight: 600;
+        }
+        i
+        {
+            font-size: 22px;
+            color: #00c9b1!important;
+        }
+        a
+        {
+            color: #626262!important;
+            transition: all .3s ease-in-out;
+            &:hover
+            {
+                color: #00c9b1!important;
+                text-decoration: none!important;
+            }
+        }
+        .spec-form
+        {
+            
+            &::placeholder
+            {
+                font-size: 16px!important;
+            }
+        }
+        .spec-text
+        {
+            border-color: #ced4da!important;
+            background-image: none;
+        }
+        .spec-btn
+            {
+                font-family: 'Dosis', sans-serif;
+                border: 1px solid #00c9b1;
+                background-color: #00c9b1!important;
+                transition: all .3s ease-in-out;
+                &:hover
+                {
+                .spec-btn-overlay-2
+                {
+                    width: 100%;
+                }
+                .spec-contact
+                {
+                    color: #00c9b1!important;
+                }
+                }
+                .spec-btn-overlay-2
+                {
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    transition: all .5s ease-in-out;
+                }
+                .spec-contact
+                {
+                    color: white!important;
+                    font-size: 16px;
+                    transition: all .5s ease-in-out;
+                }
+            }
+    }
+}
+
+footer
+{
+    .container
+    {
+        .spec-copyright
+        {
+            font-weight: 600;
+            .spec-brand
+            {
+                color: #00c9b1!important;
+            }
+        }
+        ul
+        {
+            font-weight: 600;
+            a
+            {
+                transition: all .3s ease-in-out;
+                &:hover
+                {
+                    color: #00c9b1!important;
+                }
+            }
+        }
+        .spec-square-3
+        {
+            width: 45px;
+            height: 45px;
+            border-width: 2px!important;
+            transition: all .3s ease-in-out;
+            &:hover
+            {
+                background-color: #00c9b1;
+                border: 2px solid #00c9b1!important;
+                cursor: pointer;
+                i
+                {
+                    color: white!important;
+                }
+            }
+            i
+            {
+                font-size: 1.3em;
+                transition: all .3s ease-in-out;
+                transition-delay: .3s;
+            }
+        }
+    }
+}
+@media (max-width: 767.9px)
+{
+    footer
+    {
+        .spec-square-3
+        {
+            width: 30px!important;
+            height: 30px!important;
+            i
+            {
+                font-size: 1em!important;
+            }
+        }
+    }
+}

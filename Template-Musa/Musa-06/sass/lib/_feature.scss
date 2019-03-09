@@ -1,0 +1,109 @@
+#feature
+{
+    .spec-heading
+    {
+        font-weight: 600;
+    }
+    .spec-p
+    {
+        color: #626262;
+    }
+    .spec-line
+        {
+            width: 90px;
+            height: 2px;
+            background-color: #00C9B1;
+            position: relative;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%);
+                &::after
+            {
+                content: "";
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color: #00C9B1;
+                position: relative;
+                top: -10px;
+                left: 2px;
+                transform: rotate(45deg);
+            }
+        }
+    .spec-p-2
+    {
+        color: #626262;
+    }
+    .spec-shadow
+    {
+        transition: all .3s ease-in-out;
+        &:hover
+        {
+            box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.52)!important;
+            .spec-square
+            {
+                background-color: #00C9B1!important;
+            }
+        }
+        .spec-square
+        {
+        width: 60px;
+        height: 60px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: all .3s ease-in-out;
+            i
+            {
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.9px)
+{
+    #feature
+    {
+        .spec-box-head
+        {
+            max-width: 90%!important;
+        }
+        .spec-box
+        {
+            max-width: 90%!important;
+            .spec-square
+            {
+                max-width: 50px;
+                max-height: 50px;
+                i
+                {
+                    font-size: 1.8em;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 767.9px)
+{
+    #feature
+    {
+        .spec-box-head
+        {
+            max-width: 70%!important;
+        }
+        .spec-box
+        {
+            max-width: 70%!important;
+            .spec-square
+            {
+                max-width: 50px;
+                max-height: 50px;
+                i
+                {
+                    font-size: 1.7em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+#what-clients-say
+{
+    .container-fluid
+    {
+        background-color: #f6f6f6;
+        .container
+        {
+            .spec-heading
+            {
+                font-weight: 600;
+            }
+            .spec-p
+            {
+                color: #626262;
+            }
+            .spec-line
+            {
+            width: 90px;
+            height: 2px;
+            background-color: #00C9B1;
+            position: relative;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%);
+                &::after
+            {
+                content: "";
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color: #00C9B1;
+                position: relative;
+                top: -10px;
+                left: 2px;
+                transform: rotate(45deg);
+            }
+            }
+            .spec-box
+            {
+                box-shadow: 0px 1px 6px rgba(0,0,0,0.15);
+                img
+                {
+                    width: 80px;
+                    height: 80px;
+                }
+                h6
+                {
+                    color: #00c9b1;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575.9px)
+{
+    #what-clients-say
+    {
+        .spec-box
+        {
+            max-width: 90%!important;
+        }
+        .spec-p-info
+        {
+            font-size: 13px!important;
+        }
+        img
+        {
+            width: 60px!important;
+            height: 60px!important;
+        }
+    }
+}

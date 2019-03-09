@@ -1,0 +1,160 @@
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+header
+{
+    width: 100%;
+    position: absolute;
+    .container
+    {
+        .spec-musa
+        {
+            font-weight: 600;
+        }
+        .spec-active-link
+        {
+            color: #00c9b1!important;
+        }
+        .spec-item
+        {
+            &:hover
+            {
+                .spec-link
+                {
+                    color: #00c9b1!important;
+                }
+            }
+        }
+        .spec-link
+        {
+            font-weight: 400;
+            transition: all .3s ease-in-out;
+        }
+        i
+        {
+            font-size: 40px;
+        }
+    }    
+}
+#home
+{
+    .container-fluid
+    {
+        background-image: url(../img/back.jpg);
+        background-size: cover;
+        background-position: 65% 50%;
+        .spec-welcome
+        {
+            color: #232323;
+            font-weight: 600;
+        }
+        .spec-we
+        {
+            font-size: 40px;
+            color: #232323;
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 15px;
+            .spec-m
+            {
+                color: #00c9b1;
+            }
+        }
+        .spec-pro
+        {
+            font-weight: 400;
+            font-size: 17px;
+            color: #666;
+        }
+        .spec-btn-group
+        {
+            margin-right: 0!important;
+        }
+        .spec-btn
+        {
+            font-family: 'Dosis', sans-serif;
+            border: 1px solid #00c9b1;
+            border-radius: 5%!important;
+            background-color: #00c9b1!important;
+            &:hover
+            {
+                .spec-btn-overlay-1
+                {
+                    width: 100%;
+                }
+                .spec-about
+                {
+                    color: #00c9b1!important;
+                }
+                .spec-btn-overlay-2
+                {
+                    height: 100%;
+                }
+                .spec-contact
+                {
+                    color: #00c9b1!important;
+                }
+                
+            }
+            .spec-btn-overlay-1
+            {
+                top: 0;
+                left: 0;
+                width: 0;
+                transition: all .5s ease-in-out;
+            }
+            .spec-btn-overlay-2
+            {
+                top: 0;
+                left: 0;
+                height: 0;
+                transition: all .5s ease-in-out;
+            }
+            .spec-about
+            {
+                font-size: 16px;
+                transition: all .5s ease-in-out;
+            }
+            .spec-contact
+            {
+                font-size: 16px;
+                transition: all .5s ease-in-out;
+            }
+        }
+        .spec-anime
+        {
+            left: 50%;
+            bottom: 2%;
+            transfrom: translate(-50%,-10%);
+        }
+        .spec-tube
+        {
+            height: 65px;
+            width: 35px;
+            border: 2px solid #00c9b1;
+            border-radius: 30px;
+            .spec-circle
+            {
+                width: 10px;
+                height: 10px;
+                background-color: #00c9b1;
+                bottom: 10%;
+                left: 50%;
+                transform: translate(-50%);
+                animation-name: ball;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
+        }
+        @keyframes ball
+        {
+            0% {bottom:10%;};
+            100% {bottom:70%;};
+        }
+    }
+}

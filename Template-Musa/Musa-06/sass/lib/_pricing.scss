@@ -1,0 +1,162 @@
+#pricing
+{
+    .container-fluid
+    {
+        background-color: #f6f6f6;
+        .container
+        {
+            .spec-heading
+            {
+                font-weight: 600;
+            }
+            .spec-p
+            {
+                color: #626262;
+            }
+            .spec-line
+            {
+            width: 90px;
+            height: 2px;
+            background-color: #00C9B1;
+            position: relative;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%);
+                &::after
+            {
+                content: "";
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color: #00C9B1;
+                position: relative;
+                top: -10px;
+                left: 2px;
+                transform: rotate(45deg);
+            }
+            }
+            .spec-box
+            {
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                transition: all .3s ease-in-out;
+                p
+                {
+                    font-weight: 600;
+                    transition: all .3s ease-in-out;
+                }
+                h3
+                {
+                    font-family: 'Dosis', sans-serif;
+                    font-weight: 600;
+                    font-size: 48px;
+                    transition: all .3s ease-in-out;
+                }
+                .spec-currency
+                {
+
+                    transition: all .3s ease-in-out;
+                    transition-delay: .3s;
+                }
+                i
+                {
+                    color: #00c9b1;
+                    transition: all .3s ease-in-out;
+                    transition-delay: .3s;
+                }
+                .spec-btn
+                {
+                    font-family: 'Dosis', sans-serif;
+                    border: 1px solid #00c9b1;
+                    border-radius: 5%!important;
+                    background-color: #00c9b1!important;
+                    transition: all .3s ease-in-out;
+                    &:hover
+                    {
+                        .spec-btn-overlay-2
+                        {
+                            width: 100%;
+                        }
+                        .spec-contact
+                        {
+                            color: #00c9b1!important;
+                        }
+                    }
+                    .spec-btn-overlay-2
+                        {
+                            top: 0;
+                            left: 0;
+                            width: 0;
+                            transition: all .5s ease-in-out;
+                        }
+                    .spec-contact
+                        {
+                            font-size: 16px;
+                            transition: all .5s ease-in-out;
+                        }
+                }
+                &:hover
+                {
+                    background-color: #00c9b1!important;
+                    p, h3, .spec-currency, .spec-time, i
+                    {
+                        color: white;
+                    }
+                    .spec-btn
+                    {
+                        border-color: white;
+                    }
+                    
+                }
+            }
+            .spec-box-middle
+            {
+                background-color: #00c9b1;
+                color: white;
+                p
+                {
+                    font-weight: 600;
+                }
+                h3
+                {
+                    font-family: 'Dosis', sans-serif;
+                    font-weight: 600;
+                    font-size: 48px;
+                }
+                i
+                {
+                    color: white;
+                }
+                .spec-btn
+                {
+                    font-family: 'Dosis', sans-serif;
+                    border: 1px solid white;
+                    border-radius: 5%!important;
+                    background-color: white!important;
+                    .spec-contact
+                    {
+                        color: #00c9b1!important;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767.9px)
+{
+    #pricing
+    {
+        .spec-box-price
+        {
+            max-width: 90%!important;
+        }
+        .spec-box
+        {
+            max-width: 100%!important;
+        }
+        .spec-box-middle
+        {
+            max-width: 100%!important;
+        }
+    }
+}
